@@ -1,0 +1,208 @@
+.right-sidebar {
+    position: fixed;
+    top: 58px;
+    bottom: 0;
+    right: 0;
+    width: 335px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+    margin-top: 15px;
+    background-color: rgb(240, 242, 245);
+}
+
+.friend-requests-upper-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friend-requests,
+.birthdays {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(101, 103, 107);
+}
+
+.see-all {
+    font-size: 15px;
+    color: rgb(33, 100, 232);
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color, 0.15s;
+    cursor: pointer;
+}
+
+.see-all:hover {
+    background-color: rgb(219, 221, 227);
+}
+
+.friend-requests-lower-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 10px;
+    margin-left: -8px;
+    cursor: pointer;
+}
+
+.friend-requests-lower-container:hover {
+    background-color: rgb(219, 221, 227);
+    border-radius: 8px;
+}
+
+.friend-requests-lower-container:hover .mutual-friends-picture {
+    border-color: rgb(219, 221, 227);
+}
+
+.friend-details {
+    width: 260px;
+}
+
+.friend-requests-picture {
+    width: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    margin-right: 12px;
+}
+
+.friend-requests-name-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.friend-requests-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(5, 5, 5)
+}
+
+.when {
+    color: rgb(101, 103, 107);
+    font-size: 13px;
+}
+
+.mutual-friends-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mutual-friends-picture {
+    width: 20px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    border-color: rgb(240, 242, 245);
+    border-width: 2px;
+    border-style: solid;
+}
+
+.mutual-friends-1 {
+    z-index: 100;
+}
+
+.mutual-friends-2 {
+    margin-left: -8px;
+}
+
+.mutual-friends-number {
+    color: rgb(101, 103, 107);
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.accept-friend {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+.confirm-button {
+    color: white;
+    background-color: rgb(27, 116, 228);
+    border: none ;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 32px;
+    border-radius: 5px;
+    transition: background-color, 0.15s;
+    cursor: pointer;
+}
+
+.confirm-button:hover {
+    background-color: rgb(24, 103, 200);
+}
+
+.delete-button {
+    color: black;
+    background-color: rgb(228, 230, 225);
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 38px;
+    border-radius: 5px;
+    transition: background-color, 0.15s;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: rgb(204, 207, 202);
+}
+
+.right-sidebar-first-horizontal-line {
+    margin: 0;
+    margin-top: 10px;
+    background-color: rgba(101, 103, 107, 0.2);
+    height: 2px;
+    width: 325px;
+    margin-bottom: 15px;
+}
+
+.birthday-container {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    margin-left: -8px;
+    cursor: pointer;
+}
+
+.birthday-container:hover {
+    background-color: rgb(219, 221, 227);
+    border-radius: 8px;
+}
+
+.birthday-icon {
+    width: 28px;
+    margin-right: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.friend-birthday {
+    line-height: 23px;
+    font-size: 15px;
+}
+
+.friend-birthday-name {
+    font-weight: 500;
+}
+
+.right-sidebar-second-horizontal-line {
+    margin: 0;
+    margin-top: 10px;
+    background-color: rgba(101, 103, 107, 0.2);
+    height: 0.1px;
+    width: 325px;
+    margin-bottom: 15px;
+}
