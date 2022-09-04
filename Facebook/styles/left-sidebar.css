@@ -65,6 +65,10 @@
     object-position: center;
 }
 
+.left-sidebar-bottom-container:hover .edit {
+    opacity: 1;
+}
+
 .shortcuts-and-edit-container {
     margin: 0;
     margin-left: 1px;

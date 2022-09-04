@@ -1,9 +1,10 @@
 .right-sidebar {
     position: fixed;
-    top: 58px;
+    top: 47px;
     bottom: 0;
     right: 0;
-    width: 335px;
+    width: 22%;
+    min-width: 280px;
     display: flex;
     flex-direction: column;
     margin-right: 8px;
@@ -19,7 +20,8 @@
 }
 
 .friend-requests,
-.birthdays {
+.birthdays,
+.contacts {
     font-size: 17px;
     font-weight: 500;
     color: rgb(101, 103, 107);
@@ -39,25 +41,20 @@
 }
 
 .friend-requests-lower-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10px 10px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    padding: 8px 10px;
     margin-left: -8px;
     cursor: pointer;
 }
 
 .friend-requests-lower-container:hover {
     background-color: rgb(219, 221, 227);
-    border-radius: 8px;
 }
 
 .friend-requests-lower-container:hover .mutual-friends-picture {
     border-color: rgb(219, 221, 227);
-}
-
-.friend-details {
-    width: 260px;
 }
 
 .friend-requests-picture {
@@ -65,7 +62,12 @@
     object-fit: cover;
     object-position: center;
     border-radius: 30px;
-    margin-right: 12px;
+    margin-right: 50px;
+}
+
+.friend-details {
+    width: 100%;
+    overflow: hidden;
 }
 
 .friend-requests-name-container {
@@ -121,20 +123,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     margin-top: 7px;
 }
 
 .confirm-button {
+    width: 100%;
     color: white;
     background-color: rgb(27, 116, 228);
     border: none ;
     font-size: 15px;
     font-weight: bold;
-    padding: 10px 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border-radius: 5px;
     transition: background-color, 0.15s;
     cursor: pointer;
+    margin-right: 8px;
 }
 
 .confirm-button:hover {
@@ -142,12 +146,14 @@
 }
 
 .delete-button {
+    width: 100%;
     color: black;
     background-color: rgb(228, 230, 225);
     border: none;
     font-size: 15px;
     font-weight: 600;
-    padding: 10px 38px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border-radius: 5px;
     transition: background-color, 0.15s;
     cursor: pointer;
@@ -157,13 +163,14 @@
     background-color: rgb(204, 207, 202);
 }
 
-.right-sidebar-first-horizontal-line {
+.right-sidebar-first-horizontal-line,
+.right-sidebar-second-horizontal-line {
     margin: 0;
     margin-top: 10px;
+    margin-bottom: 10px;
     background-color: rgba(101, 103, 107, 0.2);
-    height: 2px;
+    height: 1.5px;
     width: 325px;
-    margin-bottom: 15px;
 }
 
 .birthday-container {
@@ -190,19 +197,131 @@
 }
 
 .friend-birthday {
-    line-height: 23px;
-    font-size: 15px;
+    line-height: 20px;
+    font-size: 14px;
 }
 
 .friend-birthday-name {
     font-weight: 500;
 }
 
-.right-sidebar-second-horizontal-line {
-    margin: 0;
-    margin-top: 10px;
-    background-color: rgba(101, 103, 107, 0.2);
-    height: 0.1px;
-    width: 325px;
-    margin-bottom: 15px;
+.contacts-upper-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contacts-function-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts {
+    width: 100%;
+}
+
+.new-room,
+.search-by-name-or-group,
+.options {
+    position: relative;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    transition: background-color, 0.15s;
+    cursor: pointer;
+}
+
+.new-room:hover,
+.search-by-name-or-group:hover,
+.options:hover {
+    background-color: rgb(219, 221, 227);
+}
+
+.new-room-icon,
+.search-by-name-or-group-icon,
+.options-icon {
+    width: 16px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.new-room .tooltip,
+.search-by-name-or-group .tooltip, 
+.options .tooltip {
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    background-color: rgb(62, 60, 60);
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -25px;
+    right: 0px;
+    opacity: 0;
+    transition: opacity, 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    box-shadow: 0px 2px 2px rgba(112, 110, 110, 0.5);
+}
+
+.new-room:hover .tooltip,
+.search-by-name-or-group:hover .tooltip, 
+.options:hover .tooltip {
+    opacity: 1;
+}
+
+.contacts-lower-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    margin-left: -7px;
+}
+
+.contacts-container:hover {
+    background-color: rgb(219, 221, 227);
+}
+
+.contacts-container:hover .online {
+    border-color: rgb(219, 221, 227);
+}
+
+.friend-picture {
+    width: 35px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.online {
+    background-color: rgb(34, 197, 45);
+    width: 6px;
+    height: 6px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(240, 242, 245);
+    position: absolute;
+    bottom: 5px;
+    left: 32px;
+}
+
+.friend-name {
+    font-size: 15px;
+    margin-left: 15px;
+    font-weight: 500;
 }
