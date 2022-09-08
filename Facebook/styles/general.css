@@ -8,7 +8,46 @@ p {
 body {
     font-family: Roboto, Arial;
     margin: 0;
-    margin-left: 505px;
-    padding-bottom: 3000px;
+    margin-top: 80px;
+    margin-left: 310px;
+    margin-right: 320px;
+    padding-bottom: 30px;
     background-color: rgb(240, 242, 245);
+}
+
+@media (max-width: 1109px) {
+    .left-sidebar {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    body {
+        margin-left: 50px;
+    }
+
+    .right-sidebar {
+        background-color: black;
+        position: fixed;
+        top: 55px;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 8px;
+        margin-top: 15px;
+        background-color: rgb(240, 242, 245);
+    }
+}
+
+@media (max-width: 880px) {
+    .right-sidebar {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    body {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }

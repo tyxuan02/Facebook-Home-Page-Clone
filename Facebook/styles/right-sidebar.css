@@ -1,15 +1,18 @@
-.right-sidebar {
-    position: fixed;
-    top: 47px;
-    bottom: 0;
-    right: 0;
-    width: 22%;
-    min-width: 280px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 8px;
-    margin-top: 15px;
-    background-color: rgb(240, 242, 245);
+
+@media (min-width: 1110px) {
+    .right-sidebar {
+        background-color: black;
+        position: fixed;
+        top: 55px;
+        bottom: 0;
+        right: 0;
+        width: 22%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 8px;
+        margin-top: 15px;
+        background-color: rgb(240, 242, 245);
+    }
 }
 
 .friend-requests-upper-container {
@@ -286,7 +289,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 5px 8px;
+    padding: 8px;
     border-radius: 8px;
     cursor: pointer;
     position: relative;
