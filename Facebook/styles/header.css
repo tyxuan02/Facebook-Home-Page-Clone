@@ -110,10 +110,10 @@
     font-size: 12px;
     background-color: rgb(62, 60, 60);
     color: white;
-    padding: 8px;
+    padding: 10px 15px; 
     border-radius: 10px;
     position: absolute;
-    bottom: -40px;
+    bottom: -42px;
     opacity: 0;
     transition: opacity, 0.15s;
     pointer-events: none;
@@ -159,4 +159,20 @@
     object-fit: cover;
     object-position: center;
     border-radius: 20px;
+}
+
+@media (max-width: 1259px) {
+    .search-bar {
+        width: 0px;
+    }
+
+    .search-bar-container {
+        width: 40px;
+        cursor: pointer;
+        transition: background-color, 0.15s;
+    }
+
+    .search-bar-container:hover {
+        background-color: rgb(204, 206, 211);
+    }
 }
