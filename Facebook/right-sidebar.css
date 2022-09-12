@@ -1,0 +1,382 @@
+
+@media (min-width: 1110px) {
+    .right-sidebar {
+        background-color: black;
+        position: fixed;
+        top: 55px;
+        bottom: 0;
+        right: 0;
+        width: 22%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 8px;
+        margin-top: 15px;
+        background-color: rgb(240, 242, 245);
+    }
+}
+
+.friend-requests-upper-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friend-requests,
+.birthdays,
+.contacts {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(101, 103, 107);
+}
+
+.see-all {
+    font-size: 15px;
+    color: rgb(33, 100, 232);
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color, 0.15s;
+    cursor: pointer;
+}
+
+.see-all:hover {
+    background-color: rgb(219, 221, 227);
+}
+
+.friend-requests-lower-container {
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    padding: 8px 10px;
+    margin-left: -8px;
+    cursor: pointer;
+}
+
+.friend-requests-lower-container:hover {
+    background-color: rgb(219, 221, 227);
+}
+
+.friend-requests-lower-container:hover .mutual-friends-picture {
+    border-color: rgb(219, 221, 227);
+}
+
+.friend-requests-picture {
+    width: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    margin-right: 50px;
+}
+
+.friend-details {
+    width: 100%;
+    overflow: hidden;
+}
+
+.friend-requests-name-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.friend-requests-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(5, 5, 5)
+}
+
+.when {
+    color: rgb(101, 103, 107);
+    font-size: 13px;
+}
+
+.mutual-friends-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mutual-friends-picture {
+    width: 20px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    border-color: rgb(240, 242, 245);
+    border-width: 2px;
+    border-style: solid;
+}
+
+.mutual-friends-1 {
+    z-index: 100;
+}
+
+.mutual-friends-2 {
+    margin-left: -8px;
+}
+
+.mutual-friends-number {
+    color: rgb(101, 103, 107);
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.accept-friend {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.confirm-button {
+    width: 100%;
+    color: white;
+    background-color: rgb(27, 116, 228);
+    border: none ;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+    transition: background-color, 0.15s;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.confirm-button:hover {
+    background-color: rgb(24, 103, 200);
+}
+
+.delete-button {
+    width: 100%;
+    color: black;
+    background-color: rgb(228, 230, 225);
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+    transition: background-color, 0.15s;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: rgb(204, 207, 202);
+}
+
+.right-sidebar-first-horizontal-line,
+.right-sidebar-second-horizontal-line {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(101, 103, 107, 0.2);
+    height: 1.5px;
+    width: 325px;
+}
+
+.birthday-container {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    margin-left: -8px;
+    cursor: pointer;
+}
+
+.birthday-container:hover {
+    background-color: rgb(219, 221, 227);
+    border-radius: 8px;
+}
+
+.birthday-icon {
+    width: 28px;
+    margin-right: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.friend-birthday {
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.friend-birthday-name {
+    font-weight: 500;
+}
+
+.contacts-upper-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contacts-function-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts {
+    width: 100%;
+}
+
+.new-room,
+.search-by-name-or-group,
+.options {
+    position: relative;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    transition: background-color, 0.15s;
+    cursor: pointer;
+}
+
+.new-room:hover,
+.search-by-name-or-group:hover,
+.options:hover {
+    background-color: rgb(219, 221, 227);
+}
+
+.new-room-icon,
+.search-by-name-or-group-icon,
+.options-icon {
+    width: 16px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.new-room .tooltip,
+.search-by-name-or-group .tooltip, 
+.options .tooltip {
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    background-color: rgb(62, 60, 60);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -30px;
+    right: 0px;
+    opacity: 0;
+    transition: opacity, 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    box-shadow: 0px 2px 2px rgba(112, 110, 110, 0.5);
+}
+
+.new-room:hover .tooltip,
+.search-by-name-or-group:hover .tooltip, 
+.options:hover .tooltip {
+    opacity: 1;
+}
+
+.contacts-lower-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 9px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    margin-left: -7px;
+}
+
+.contacts-container:hover {
+    background-color: rgb(219, 221, 227);
+}
+
+.contacts-container:hover .online {
+    border-color: rgb(219, 221, 227);
+}
+
+.friend-picture {
+    width: 35px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.online {
+    background-color: rgb(34, 197, 45);
+    width: 6px;
+    height: 6px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(240, 242, 245);
+    position: absolute;
+    bottom: 5px;
+    left: 32px;
+}
+
+.friend-name {
+    font-size: 15px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+.new-message-container {
+    position: fixed;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color, 0.15s;
+    bottom: 14px;
+    right: 13px;
+    box-shadow: 0 5px 10px rgba(112, 110, 110, 0.5), 0 5px 50px rgba(112, 110, 110, 0.5);
+}
+
+.new-message-container:hover {
+    background-color: rgba(176, 180, 187, 0.2);
+}
+
+.new-message-icon {
+    width: 20px;
+    padding-left: 5px;
+}
+
+.right-sidebar-bottom-container {
+    position: relative;
+}
+
+.new-message-tooltip {
+    position: absolute;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    background-color: rgb(62, 60, 60);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity, 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    box-shadow: 0px 2px 2px rgba(112, 110, 110, 0.5);
+    bottom: 5px;
+    right: 45px;
+}
+
+.new-message-container:hover .new-message-tooltip {
+    opacity: 1;
+}
